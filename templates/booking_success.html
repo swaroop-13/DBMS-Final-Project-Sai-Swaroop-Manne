@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Success</title>
+    <style>
+        .background-image {
+            background-image: url('https://www.rajtravelsindia.net/images/booking-suc.png');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.7); /* adding a semi-transparent white background to make text readable */
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body style >
+    <div class="background-image">
+        <div class="container">
+            <h1><i>Booking Successful</i></h1>
+            <p>Your booking for <b>{{ fullname }} </b>to <b>{{ destination }} </b>on {{ departure_date }} for <b>{{ passenger_count }}</b> passengers has been confirmed.</p>
+            
+            <button onclick="window.location.href='/';">Back to Home</button>
+        </div>
+    </div>
+</body>
+</html>

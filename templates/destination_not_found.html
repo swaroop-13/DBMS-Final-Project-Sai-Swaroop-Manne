@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination Not Found</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_destination_not_found.css') }}">
+</head>
+<br><br>
+    <nav>
+        <ul>
+            <li><a href="/search_destination">Search Destination</a></li>
+            <li><a href="/search_booking">Search Booking</a></li>
+			<li><a href="/book_ticket"> Book Ticket</a></li>
+        </ul>
+    </nav>
+<body style="background-image: url('https://images.imyfone.com/en/assets/article/change-location/location-not-found.jpg');">
+    <div class="container">
+        <h2>Destination Not Found</h2>
+        <p>The destination you searched for does not exist.</p>
+    </div>
+</body>
+</html>

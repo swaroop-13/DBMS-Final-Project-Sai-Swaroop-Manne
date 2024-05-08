@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Not Found</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_booking_not_found.css') }}">
+    <style>
+        body {
+            background-image: url('https://da2gvzglbnzm0.cloudfront.net/w3/obcw/v1/assets/puzzled-dog-495d0106.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<br><br>
+    <nav>
+        <ul>
+            <li><a href="/search_destination">Search Destination</a></li>
+            <li><a href="/search_booking">Search Booking</a></li>
+			<li><a href="/book_ticket"> Book Ticket</a></li>
+        </ul>
+    </nav>
+<body>
+    <div class="container">
+        <h2>Booking Not Found</h2>
+        <p>No bookings found for the customer you searched for.</p>
+    </div>
+</body>
+</html>

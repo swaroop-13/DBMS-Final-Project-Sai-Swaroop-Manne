@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_destination.css') }}">
+</head>
+<br><br>
+    <nav>
+        <ul>
+            <li><a href="/search_destination">Search Destination</a></li>
+            <li><a href="/search_booking">Search Booking</a></li>
+			<li><a href="/book_ticket"> Book Ticket</a></li>
+        </ul>
+    </nav>
+<body style="background-image: url('https://www.shutterstock.com/image-vector/plane-flies-over-rural-landscape-260nw-534443134.jpg');">
+    <div class="container">
+        <h2>Destination Details</h2>
+        <div class="destination-details">
+            <p>Name: <span>{{ destination[0] }}</span></p>
+            <p>Price: <span>${{ destination[1] }}</span></p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_booking.css') }}">
+</head>
+<br><br>
+    <nav>
+        <ul>
+            <li><a href="/search_destination">Search Destination</a></li>
+            <li><a href="/search_booking">Search Booking</a></li>
+			<li><a href="/book_ticket"> Book Ticket</a></li>
+        </ul>
+    </nav>
+<body>
+    <div class="container">
+        <h2>Booking Details</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Customer Name</th>
+                    <th>Destination</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for booking in bookings %}
+                <tr>
+                    <td>{{ booking[0] }}</td>
+                    <td>{{ booking[1] }}</td>
+                    <td>${{ booking[2] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

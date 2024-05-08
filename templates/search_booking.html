@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Booking</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_search_booking.css') }}">
+    <style>
+        body {
+            background-image: url("https://www.realsimple.com/thmb/dOZ7BuMiHQtJbYpW5zVnkUAdpCI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/international-flight-GettyImages-1399900203-5ecf01ed2b504c38b01db15dcb540e2d.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<br><br>
+    <nav>
+        <ul>
+            <li><a href="/search_destination">Search Destination</a></li>
+            <li><a href="/search_booking">Search Booking</a></li>
+			<li><a href="/book_ticket"> Book Ticket</a></li>
+        </ul>
+    </nav>
+<body>
+    <h2>Search Booking</h2>
+    <form action="/search_booking" method="post">
+        <label for="customer">Customer Name:</label>
+        <input type="text" id="customer" name="customer" required>
+        <button type="submit">Search</button>
+    </form>
+</body>
+</html>

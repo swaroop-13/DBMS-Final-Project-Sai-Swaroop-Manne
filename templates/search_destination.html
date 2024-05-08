@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Destination</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_search_destination.css') }}">
+    <style>
+        body {
+            background-image: url("https://www.usatoday.com/gcdn/presto/2019/06/23/USAT/c3a9f051-bd6c-4b39-b5b9-38244deec783-GettyImages-932651818.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+</head><br><br>
+    <nav>
+        <ul>
+            <li><a href="/search_destination">Search Destination</a></li>
+            <li><a href="/search_booking">Search Booking</a></li>
+			<li><a href="/book_ticket"> Book Ticket</a></li>
+        </ul>
+    </nav>
+<body>
+    <h2>Search Destination</h2>
+    <form action="/search_destination" method="post">
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" name="destination" required>
+        <button type="submit">Search</button>
+    </form>
+</body>
+</html>

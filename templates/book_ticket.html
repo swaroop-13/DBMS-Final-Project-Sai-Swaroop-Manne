@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Ticket</title>
+     <link rel="stylesheet" href="{{ url_for('static', filename='style_book_ticket.css') }}">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Book Ticket</h1>
+        </div>
+    </header>
+	
+    <nav>
+        <ul>
+            <li><a href="/search_destination">Search Destination</a></li>
+            <li><a href="/book_ticket">Book Ticket</a></li>
+            <li><a href="/search_booking">Search Booking</a></li>
+        </ul>
+    </nav>
+	<br>
+    <main>
+        <section class="booking-form">
+            <h2>Enter Your Details</h2>
+            <form action="/confirm_booking" method="POST">
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="destination">Destination:</label><br>
+                <input type="text" id="destination" name="destination" required><br><br>
+                <label for="departure_date">Departure Date:</label><br>
+                <input type="date" id="departure_date" name="departure_date" required><br><br>
+                <label for="passenger_count">Passenger Count:</label><br>
+                <input type="number" id="passenger_count" name="passenger_count" min="1" required><br><br>
+                <input type="submit" value="Book Now">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Flight Booking System. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
